@@ -1,0 +1,9 @@
+    6  sudo apt-get remove bcmwl-kernel-source
+    7  sudo apt-get install firmware-b43-installer b43-fwcutter
+
+    8  cat /etc/modprobe.d/* | egrep 'bcm'
+    9  cd /etc/modprobe.d/
+   12  vi blacklist.conf 
+
+   13  reboot 
+
